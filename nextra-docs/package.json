@@ -1,0 +1,24 @@
+{
+  "name": "example-docs",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next --turbopack",
+    "dev:webpack": "next",
+    "postbuild": "pagefind --site .next/server/app --output-path public/_pagefind",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^15.0.2",
+    "nextra": "4.3.0-alpha.21",
+    "nextra-theme-docs": "4.3.0-alpha.21",
+    "@theguild/remark-mermaid": "^0.3.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "pagefind": "^1.3.0"
+  },
+  "packageManager": "pnpm@9.15.9"
+}
